@@ -1,0 +1,598 @@
+/**
+ * Admin Dashboard Styles
+ *
+ * Comprehensive styling for the odds comparison admin dashboard.
+ *
+ * @package OddsComparison
+ * @since 1.0.0
+ */
+
+/* Admin Dashboard Container */
+.odds-comparison-dashboard {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.dashboard-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h3 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.2em;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.status-indicator {
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.status-indicator.connected {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-indicator.disconnected {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0073aa;
+    margin: 10px 0;
+}
+
+.dashboard-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.quick-actions h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.action-buttons .button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.action-buttons .button-primary {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+}
+
+.action-buttons .button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+.action-buttons .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Recent Activity */
+.recent-activity {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.recent-activity h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+}
+
+.activity-log {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 15px;
+    min-height: 100px;
+    color: #666;
+}
+
+/* Bookmaker Management */
+.bookmakers-management {
+    max-width: 1000px;
+}
+
+.add-bookmaker-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.add-bookmaker-section h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.existing-bookmakers {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.existing-bookmakers h2 {
+    margin-top: 0;
+    color: #23282d;
+    font-size: 1.3em;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.bookmakers-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.bookmaker-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.bookmaker-item:hover {
+    background: #f0f0f0;
+    border-color: #0073aa;
+}
+
+.bookmaker-info h3 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+    font-size: 1.1em;
+}
+
+.bookmaker-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.bookmaker-info .bookmaker-url a,
+.bookmaker-info .affiliate-link a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.bookmaker-info .bookmaker-url a:hover,
+.bookmaker-info .affiliate-link a:hover {
+    text-decoration: underline;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.enabled {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-badge.disabled {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.bookmaker-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.bookmaker-actions .button {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.bookmaker-actions .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bookmaker-actions .button-link-delete {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.bookmaker-actions .button-link-delete:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* Markets Configuration */
+.markets-configuration {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.markets-configuration table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.markets-configuration th,
+.markets-configuration td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    text-align: left;
+}
+
+.markets-configuration th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #23282d;
+}
+
+.markets-configuration tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.markets-configuration tr:hover {
+    background: #f0f8ff;
+}
+
+.market-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.outcome-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.outcome-item input[type="text"] {
+    flex: 1;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.outcome-item code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #495057;
+    font-family: 'Courier New', monospace;
+}
+
+/* Settings Page */
+.form-table th {
+    width: 200px;
+    padding: 20px 10px 20px 0;
+    vertical-align: top;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.form-table td {
+    padding: 20px 10px;
+    vertical-align: top;
+}
+
+.form-table input[type="text"],
+.form-table input[type="url"],
+.form-table input[type="number"],
+.form-table select {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-table input[type="text"]:focus,
+.form-table input[type="url"]:focus,
+.form-table input[type="number"]:focus,
+.form-table select:focus {
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+    outline: none;
+}
+
+.form-table .description {
+    color: #666;
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.form-table .description a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.form-table .description a:hover {
+    text-decoration: underline;
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Messages */
+.notice {
+    padding: 12px;
+    margin: 15px 0;
+    border-left: 4px solid;
+    border-radius: 0 4px 4px 0;
+}
+
+.notice.notice-success {
+    background: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.notice.notice-error {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.notice.notice-warning {
+    background: #fff3cd;
+    border-left-color: #ffc107;
+    color: #856404;
+}
+
+.notice.notice-info {
+    background: #d1ecf1;
+    border-left-color: #17a2b8;
+    color: #0c5460;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .bookmaker-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .bookmaker-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .action-buttons .button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .markets-configuration table {
+        font-size: 14px;
+    }
+    
+    .markets-configuration th,
+    .markets-configuration td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-card,
+    .add-bookmaker-section,
+    .existing-bookmakers,
+    .markets-configuration {
+        padding: 15px;
+    }
+    
+    .bookmaker-item {
+        padding: 10px;
+    }
+    
+    .markets-configuration table {
+        font-size: 12px;
+    }
+    
+    .markets-configuration th,
+    .markets-configuration td {
+        padding: 8px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .dashboard-card,
+    .add-bookmaker-section,
+    .existing-bookmakers,
+    .markets-configuration,
+    .quick-actions,
+    .recent-activity {
+        background: #1e1e1e;
+        border-color: #444;
+        color: #fff;
+    }
+    
+    .dashboard-card h3,
+    .add-bookmaker-section h2,
+    .existing-bookmakers h2,
+    .quick-actions h2,
+    .recent-activity h2 {
+        color: #fff;
+        border-color: #444;
+    }
+    
+    .bookmaker-item {
+        background: #2a2a2a;
+        border-color: #444;
+    }
+    
+    .bookmaker-item:hover {
+        background: #333;
+        border-color: #0073aa;
+    }
+    
+    .bookmaker-info h3 {
+        color: #fff;
+    }
+    
+    .bookmaker-info p {
+        color: #ccc;
+    }
+    
+    .markets-configuration th {
+        background: #2a2a2a;
+        color: #fff;
+    }
+    
+    .markets-configuration tr:nth-child(even) {
+        background: #2a2a2a;
+    }
+    
+    .markets-configuration tr:hover {
+        background: #333;
+    }
+    
+    .outcome-item {
+        background: #2a2a2a;
+    }
+    
+    .outcome-item code {
+        background: #444;
+        color: #fff;
+    }
+    
+    .activity-log {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #ccc;
+    }
+}
+
+
+/* Print Styles */
+@media print {
+    .action-buttons,
+    .bookmaker-actions {
+        display: none;
+    }
+    
+    .dashboard-card,
+    .bookmaker-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}

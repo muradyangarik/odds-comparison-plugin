@@ -1,0 +1,109 @@
+/**
+ * Gutenberg Block Styles
+ *
+ * @package OddsComparison
+ * @since 1.0.0
+ */
+
+/* Live Events Block Styles */
+.odds-live-events-block {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.odds-live-events-title {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.odds-live-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.odds-live-events-block.layout-list .odds-live-events-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.odds-live-event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.odds-live-event-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.event-sport-tag {
+    background: #0073aa;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.event-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.team-name {
+    font-weight: bold;
+    flex: 1;
+}
+
+.vs-divider {
+    margin: 0 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+.event-time {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.event-bookmakers {
+    color: #0073aa;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.view-odds-btn {
+    background: #0073aa;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.view-odds-btn:hover {
+    background: #005a87;
+    color: white;
+}
+
+.odds-live-events-block-empty,
+.odds-live-events-block-error {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+}

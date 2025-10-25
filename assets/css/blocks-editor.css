@@ -1,0 +1,75 @@
+/**
+ * Gutenberg Block Editor Styles
+ *
+ * Enhanced styles for the odds comparison Gutenberg blocks in the editor.
+ *
+ * @package OddsComparison
+ * @since 1.0.0
+ */
+
+/* Block Editor Container */
+.odds-comparison-block-editor {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Live Events Block */
+.wp-block-odds-comparison-live-events {
+    margin: 20px 0;
+}
+
+.live-events-block-preview {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.live-events-block-preview h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.3em;
+}
+
+.live-events-block-preview p {
+    margin: 0 0 15px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Inspector Controls Styling */
+.components-panel__body .components-base-control {
+    margin-bottom: 15px;
+}
+
+.components-panel__body .components-base-control .components-base-control__label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Range Controls */
+.components-panel__body .components-range-control {
+    margin-bottom: 20px;
+}
+
+/* Toggle Controls */
+.components-panel__body .components-toggle-control {
+    margin-bottom: 15px;
+}
+
+/* Select Controls */
+.components-panel__body .components-select-control {
+    margin-bottom: 15px;
+}
+
+/* Block Wrapper for Better Interaction */
+.wp-block-odds-comparison-live-events {
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .live-events-block-preview {
+        padding: 15px;
+    }
+}
